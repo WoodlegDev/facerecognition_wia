@@ -15,6 +15,8 @@ def analyze_face(img_path):
 analyzed_list = []
 for img in path_list:
     face = analyze_face(img)
-    analyzed_list.append(face)
+    dic = {img: face}
+    analyzed_list.append(dic)
+
 
 print(analyzed_list)
